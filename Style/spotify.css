@@ -1,0 +1,258 @@
+/* Common styles for all devices */
+@font-face {
+    font-family: "CircularSpotifyText";
+    src: url("../font/CircularSpotifyText-Black.otf");
+  }
+  
+  /* Add light and book font-family definitions */
+  @font-face {
+    font-family: "CircularSpotifyText-Light";
+    src: url("../font/CircularSpotifyText-Light.otf");
+  }
+  
+  @font-face {
+    font-family: "CircularSpotifyText-Book";
+    src: url("../font/CircularSpotifyText-Book.otf");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+    font-family: CircularSpotifyText;
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(34, 34, 34);
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .header .btn {
+    background-color: black;
+    outline: none;
+    border-radius: 20px;
+    color: black;
+    border: none;
+    text-align: center;
+  }
+  
+  /* Navigation styles */
+  .left {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+  }
+  
+  /* Main content styles */
+  .right {
+    width: 100%;
+    padding: 16px 10px;
+    margin: 16px 0;
+    position: relative;
+  }
+  
+  /* Home ul styles */
+  .home ul li {
+    display: flex;
+    list-style: none;
+    width: 18px;
+    gap: 15px;
+    padding-top: 14px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  /* Library styles */
+  .Library {
+    min-height: 70vh;
+    position: relative;
+  }
+  
+  /* Heading styles */
+  .heading {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 13px;
+    padding: 12px 0px;
+  }
+  
+  /* Heading img styles for larger screens */
+  @media (min-width: 768px) {
+    .heading img {
+      width: 20px;
+    }
+  }
+  
+  /* Footer styles */
+  .footer {
+    display: flex;
+    gap: 13px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0px;
+  }
+  
+  .footer a {
+    color: grey;
+  }
+  
+  /* Header styles for larger screens */
+  @media (min-width: 768px) {
+    .header > * {
+      padding: 20px;
+    }
+  }
+  
+  /* Card Container styles */
+  .cardContainer {
+    margin: 30px;
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 50vh;
+  }
+  
+  /* Card styles */
+  .card {
+    width: 100%;
+    max-width: 300px;
+    padding: 11px;
+    background-color: #252525;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+    border-top-left-radius: 14px;
+  }
+  
+  /* Card styles for larger screens */
+  @media (min-width: 768px) {
+    .card {
+      width: 48%;
+    }
+  }
+  
+  /* Footer styles for larger screens */
+  @media (min-width: 768px) {
+    .footer {
+      padding: 10px 20px;
+    }
+  }
+  
+  /* Playbar styles */
+  .playbar {
+    position: fixed;
+    bottom: 30px;
+    background-color: #748c7c;
+    width: 100%;
+    padding: 10px;
+    height: 42px;
+    margin-left: 0;
+  }
+  
+  /* Playbutton styles */
+  .playbutton {
+    justify-content: center;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .playbutton img {
+    cursor: pointer;
+  }
+  
+  /* SongList styles */
+  .songList {
+    overflow-y: auto;
+    height: 49vh;
+    margin-bottom: 44px;
+  }
+  
+  .songList ul li {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    padding: 6px 9px;
+    border: 2px solid white;
+    margin: 7px 0;
+    justify-content: space-between;
+    border-radius: 7px;
+  }
+  
+  /* Playnow styles */
+  .playnow {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .playnow span {
+    width: 51px;
+    font-size: 13px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .playnow img {
+    width: 19px;
+  }
+  
+  /* Songinfo styles */
+  .songinfo {
+    font-family: serif;
+    font-size: 15px;
+    width: 100%;
+  }
+  
+  /* Seekbar styles */
+  .seekbar {
+    height: 1px;
+    width: 90%;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 4px;
+    right: 35.1px;
+    border-radius: 10px;
+  }
+  
+  /* Circle styles */
+  .circle {
+    bottom: -6px;
+    height: 13px;
+    width: 13px;
+    border-radius: 45px;
+    background-color: aliceblue;
+    position: absolute;
+    left: 0px;
+    transition: left, 0.5s;
+  }
+  
+  /* Playbuttonflex styles */
+  .playbuttonflex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Song-info styles */
+  .song-info .songtime {
+    color: white;
+    padding: 0px 12px;
+  }
+  
